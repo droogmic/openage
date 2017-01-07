@@ -20,22 +20,57 @@ User-Visible Features
 * Flat, infinite terrain rendering
 * Basic map generation
 
-* Interactive menus with on-screen guide
+* Global keybindings:
+  * `←`,`↑`,`→`,`↓`,`Middle mouse button` - Map scrolling
+  * `1`-`8` - Switch to player 1-8
+  * `F1` - Toggle HUD
+  * `F2` - Screenshot -> `/tmp/openage_2019-12-31_23-59-59_xx.png`
+  * `F3` - Toggle debug overlay
+  * `F12` - Toggle integrated profiler
+  * `M` - Toggle mode
+  * `P` - Toggle unit debug
+  * `` ` `` - Open ingame console
+  * `Space` - Toggle blending
+  * `Shft`+`Esc` - Stop game
+
+* Interactive menu modes with on-screen guide
+  * Creation mode: Game terrain generation
+    * Buttons
+      * change_mode
+      * save_game
+      * generate_game
+      * end_game
+      * reload_assets
+    * Options
+      * generation_seed - Seed for random terrain generator
+      * terrain_size
+      * terrain_base_id
+      * player_area
+      * player_radius
+      * load_filename
+      * from_file (checkbox)
+      * player_names
   * Construct mode: Terrain and unit placement
+    * 5 tab object selection menu
+    * Object categories:
+      * terrain - terrain painting
+      * Projectile - projectile sprites
+      * Object - e.g. trees, bushes, rocks, mountains, corpses
+      * Living - player units
+      * Buildings - player buildings
   * Action mode: Unit control and gameplay!
-    * Shortkeys for building creation
+    * Click+drag area select units
     * Attacking, woodchopping, gathering, ...
-    * Change active player with number keys
-
-* Map scrolling with arrow keys or middle mouse button
-
-* Screenshots with `F2` -> `/tmp/openage_2019-12-31_23-59-59_xx.png`
-
-* Ingame console
-  * Open with `backtick`
-
-* Integrated profiler: `F12` to start/stop + show results
-
+    * Basic hud
+    * Shortkeys for building creation
+    * Keybindings:
+      * `Q` - BUILD_MENU
+      * `W` - BUILD_MENU_MIL
+      * `T` - TRAIN_OBJECT
+      * `Y` - ENABLE_BUILDING_PLACEMENT
+      * `G` - SET_ABILITY_GARRISON
+      * `V` - SPAWN_VILLAGER
+      * `Delete` - KILL_UNIT
 
 Under the hood
 --------------
